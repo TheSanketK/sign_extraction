@@ -1,0 +1,33 @@
+[project]
+name = "sign-extraction"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sanket Kadam", email = "kadamsanket9352@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "datasets>=5.1.0",
+    "fastapi>=0.142.2",
+    "labelme>=7.8.0",
+    "onnxruntime>=1.28.0",
+    "opencv-python>=5.0.0.93",
+    "pandas>=3.0.6",
+    "pillow>=12.3.0",
+    "pyarrow>=25.0.1",
+    "python-dotenv>=1.2.4",
+    "python-multipart>=0.0.32",
+    "torch>=2.14.1",
+    "torchvision>=0.29.1",
+    "tqdm>=4.70.1",
+    "ultralytics>=8.4.170",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+sign-extraction = "sign_extraction:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
